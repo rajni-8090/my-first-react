@@ -1,8 +1,13 @@
-import React from 'react'
+// import React from 'react'
 
 const Header = () => {
+  let headerstyle = {
+    width: "100%",
+    color: "red",
+  }
   return (
-    <div>
+    
+    <div style={headerstyle}>
        <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">

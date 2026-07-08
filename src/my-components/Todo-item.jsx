@@ -1,11 +1,14 @@
-import React from 'react'
+// import React from 'react'
 
-const TodoItem = () => {
+export const TodoItem = ({todo, onDelete}) => {
   return (
     <div>
-      todo-item works
+      <h4>{todo.title}</h4>
+      <p>{todo.desc}</p>
+      <button type="button" className="btn btn-danger btn-sm my-3" onClick={() => onDelete(todo)}>Delete</button>
+
     </div>
   )
 }
 
-export default TodoItem
+export default TodoItem 
